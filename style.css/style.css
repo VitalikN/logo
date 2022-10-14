@@ -1,0 +1,64 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+  background-color: rgb(156, 235, 176);
+  color: rgb(4, 70, 20);
+}
+.conteiner {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+span {
+  font-size: 5vw;
+  letter-spacing: 10px;
+  animation: flip 2.6s infinite linear;
+  transform-origin: 0 70%;
+  transform-style: preserve-3d;
+}
+@keyframes flip {
+  35% {
+    transform: rotateX(360deg);
+  }
+  100% {
+    transform: rotateX(360deg);
+  }
+}
+.conteiner > span:nth-child(even) {
+  color: rgb(46, 123, 43);
+}
+.conteiner > span:nth-child(2) {
+  animation-delay: 0.3s;
+}
+.conteiner > span:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.conteiner > span:nth-child(4) {
+  animation-delay: 0.9s;
+}
+
+.conteiner > span:nth-child(5) {
+  animation-delay: 1.2s;
+}
+
+.conteiner > span:nth-child(6) {
+  animation-delay: 1.5s;
+}
+
+.conteiner > span:nth-child(7) {
+  animation-delay: 1.8s;
+}
+
+.conteiner > span:nth-child(8) {
+  animation-delay: 2.1s;
+}
+.conteiner > span:nth-child(9) {
+  animation-delay: 2.4s;
+}
+.conteiner > span:nth-child(10) {
+  animation-delay: 2.7s;
+}
+.conteiner > span:nth-child(11) {
+  animation-delay: 3s;
+}
